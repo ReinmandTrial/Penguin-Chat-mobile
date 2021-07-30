@@ -24,6 +24,9 @@
       align-items: center;
       color: #3641b7;
       font-size: 12px;
+      &:active {
+         filter: brightness(50%);
+      }
       .icon-plus {
          margin-right: 4px;
       }
@@ -90,9 +93,14 @@
       position: relative;
       width: 44px;
       height: 44px;
+      border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+      &:active {
+         background: rgba(0, 0, 0, 0.05);
+         // filter: brightness(50%);
+      }
       .icon-bell {
          position: relative;
          font-size: 20px;
@@ -130,6 +138,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      &:active {
+         filter: brightness(90%);
+      }
    }
 
    &__photo {
@@ -174,6 +185,9 @@
    display: flex;
    padding: 15px 16px 9px 16px;
    z-index: 4;
+   &:active {
+      filter: brightness(95%);
+   }
    &__container {
       position: relative;
       &:not(:last-child) {
@@ -399,6 +413,9 @@
       align-items: center;
       font-size: 12px;
       color: #010101;
+      &:active {
+         filter: brightness(90%);
+      }
       .icon-arrow {
       }
    }
@@ -407,6 +424,9 @@
       flex: 1 1 auto;
       display: flex;
       align-items: center;
+      &:active {
+         filter: brightness(90%);
+      }
    }
 
    &__photo {
@@ -455,6 +475,9 @@
       justify-content: center;
       align-items: center;
       font-size: 14px;
+      &:active {
+         filter: brightness(90%);
+      }
    }
 
    &__options {
@@ -467,6 +490,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      &:active {
+         filter: brightness(90%);
+      }
    }
 
    &__content {
@@ -492,13 +518,16 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
+      &:active {
+         filter: brightness(90%);
+      }
    }
 
    &__content {
-      // min-width: 100px;
-      max-width: 60%;
+      min-width: 100px;
+      // max-width: 60%;
       // flex: 0 1 60%;
-      padding: 8px 16px;
+      padding: 9px 16px 6px 16px;
       border-radius: 12px;
       font-size: 14px;
       line-height: 122%;
@@ -514,6 +543,7 @@
       margin-right: 8px;
    }
    .massage-mob__content {
+      margin-right: 50px;
       color: #010101;
       background: #d2d2d2;
    }
@@ -525,6 +555,7 @@
       margin-left: 8px;
    }
    .massage-mob__content {
+      margin-left: 50px;
       flex: 1 1 auto;
       color: #ffffff;
       background: #3641b7;
