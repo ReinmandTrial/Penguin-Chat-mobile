@@ -32,6 +32,15 @@ $('.popup__close').on('click', function () {
 })
 //popup end
 
+//delete chat 
+   $('.delete-dialog__btn-delete').on('click', function(){
+      $('.delete-success').addClass('open');
+   })
+   $('.delete-success__close').on('click',function(){
+      $(this).closest('.delete-success').removeClass('open');
+   })
+//delete chat end 
+
 const buttonItems = document.querySelectorAll('.dialog');
 
 for (let buttonItem of buttonItems) {
